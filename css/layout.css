@@ -1,6 +1,8 @@
 body{
   margin-bottom: 100px;
+  margin-top: 0px;
 }
+
 
 h1, h2, h3, h4, ol, ul, p, blockquote {
   width: 700px;
@@ -127,5 +129,51 @@ blockquote::before{
   margin-right: auto;
   margin-top: 80px;
   margin-bottom: 80px;
+}
 
+nav {
+  background-color: grey;
+  width: 300px;
+  display: block;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  padding: 30px;
+}
+
+nav h2 {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: white;
+
+}
+
+nav li{
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+nav ul ul li{
+  font-size: 10px;
+  line-height: 10px;
+  color: white;
+  margin-top: 20px;
+    opacity: 75%;
+}
+
+nav ul li{
+  color: white;
+  margin-left: 10px;
+
+}
+
+nav ul ul ul li {
+  margin-left: 10px;
+  color: white;
+  opacity: 50%;
 }
