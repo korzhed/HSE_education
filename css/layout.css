@@ -1,6 +1,7 @@
 body{
   margin-bottom: 100px;
   margin-top: 0px;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 
@@ -20,7 +21,6 @@ p, ol, ul {
   font-family: PT Sans;
   font-size: 22px;
   line-height: 34px;
-
 }
 
 ol {
@@ -76,9 +76,12 @@ p {
   margin-top: 17px;
 }
 
-
-
-h1 + p {
+h1 + p,
+h1 + blockquote,
+h1 + img,
+h1 + h2,
+h1 + h3,
+h1 + h4 {
   margin-top: 14px;
   font-family: PT Sans Caption;
   font-style: normal;
@@ -88,11 +91,20 @@ h1 + p {
   color: rgba(0, 0, 0, 0.4);
 }
 
-h2 + h3{
+h2 + h3,
+h2 + h4,
+h2 + img,
+h2 + blockquote,
+h2 + ol {
   margin-top: 37px;
 }
 
-h2 + p, h3 + p, h4 + p{
+h2 + p,
+h3 + p,
+h4 + p,
+blockquote + p,
+.image + p,
+ol + p {
   margin-top: 7px;
 }
 
@@ -108,6 +120,7 @@ blockquote{
   font-size: 22px;
   line-height: 34px;
   margin-top: 29px;
+  z-index: -1;
 }
 blockquote, q {
 	quotes: inherit;
@@ -132,6 +145,7 @@ blockquote::before{
 }
 
 nav {
+  box-sizing: border-box;
   background-color: white;
   width: 300px;
   display: block;
@@ -141,6 +155,12 @@ nav {
   padding: 30px;
   color: black;
   position: fixed;
+  opacity: 50%
+}
+
+nav:hover{
+  opacity: 100%;
+  transition: ease-out 0.2s;
 }
 
 nav ol{
@@ -149,6 +169,7 @@ nav ol{
   list-style: none;
   counter-reset: li;
   padding-left: 0px;
+  width: auto;
 }
 
 nav a {
@@ -163,14 +184,14 @@ nav h2 {
   font-size: 14px;
   line-height: 15px;
   margin-bottom: 12px;
-  margin-top: inherit;
+  margin-top: 0;
 }
 
 nav li{
   margin: 0;
   margin-bottom: 10px;
   font-size: 13px;
-  line-height: 10px;
+  line-height: 13px;
 }
 
 nav li::before{
