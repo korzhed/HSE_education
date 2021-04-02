@@ -136,13 +136,7 @@ blockquote::before{
   margin-left: -17px;
 }
 
-.image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
+
 
 nav {
   box-sizing: border-box;
@@ -216,4 +210,12 @@ nav ol ol ol li {
   margin-left: 10px;
   opacity: 70%;
   /* padding-left: 10px; */
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
