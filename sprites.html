@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+     body {
+       overflow: hidden;
+     }
+
+     .blast {
+       position: absolute;
+       display: block;
+       width: 151px;
+       height: 151px;
+       background: url(img/blast-151.png);
+       animation: blast_x 0.8s steps(7) infinite
+                  , blast_y 0.2s steps(3) infinite;
+     }
+
+     /* @keyframes blast_y {
+       from {background-position-y: 0;}
+       to {background-position-y: -100%;}
+     } */
+
+      @keyframes blast_x {
+       0 {background-position-x: 0;}
+       100% {background-position-x: -100%;}
+     }
+      /* .mario {
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        background: url(img/mario-walk-n-jump-68.png);
+        animation: mario-walk .4s steps(4) infinite, walk-opacity 5s steps(1) infinite;
+      }
+
+        .mario_jump {
+          position: absolute;
+          display: block;
+          overflow: hidden;
+          width: 68px;
+          height: 68px;
+          background: url(img/mario-walk-n-jump-68.png);
+          animation: mario-jump .4s steps(1) infinite, jump-opacity 5s steps(1) infinite;
+        }
+
+       .mario_wrap {
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        animation: side-to-side 5s linear infinite;
+      }
+
+      @keyframes mario-walk {
+        0% {background-position: 0 0;}
+        100% {background-position: -272px 0;}
+      }
+
+      @keyframes mario-jump {
+        0% {background-position: -272px 0;}
+        50% {background-position: -340px 0;}
+      }
+
+      @keyframes walk-opacity {
+        0% {opacity: 1;}
+        47% {opacity: 1;}
+        48% {opacity: 0;}
+        50% {opacity: 0;}
+        52% {opacity: 0;}
+        53% {opacity: 1;}
+        100% {opacity: 1;}
+      }
+
+      @keyframes jump-opacity {
+        0% {opacity: 0;}
+        47% {opacity: 0;}
+        48% {opacity: 1;}
+        50% {opacity: 1;}
+        52% {opacity: 1;}
+        53% {opacity: 0;}
+        100% {opacity: 0;}
+      }
+
+      @keyframes side-to-side {
+        0% {left: -68px; top: 200px;}
+        46% {top: 200px;}
+        50% {top: 0px;}
+        54% {top: 200px;}
+        100% {left: 100%; top: 200px;}
+      } */
+
+
+    </style>
+  </head>
+  <body>
+
+    <di class="blast"></di>
+    <!-- <div class="mario_wrap">
+      <div class="mario"></div>
+      <div class="mario_jump"></div>
+    </div> -->
+
+
+  </body>
+</html>
